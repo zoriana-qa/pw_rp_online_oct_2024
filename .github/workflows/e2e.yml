@@ -1,16 +1,16 @@
 name: e2e tests
 
 # on change to test files
-on:
-  push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
+# on:
+#   push:
+#     branches: [ main, master ]
+#   pull_request:
+#     branches: [ main, master ]
 
 # schedule run
-# on:
-  # schedule: 
-  #   - cron: "15 4,5 * * *"   # <=== Change this value
+on:
+  schedule: 
+    - cron: "30 8 * * 1-5"   # <=== Change this value
 
 # manual run
 # on:

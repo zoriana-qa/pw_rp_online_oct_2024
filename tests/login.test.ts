@@ -6,7 +6,7 @@ test("tests Login as admin", async ({ page }) => {
     .locator("div.p-0 > div:nth-of-type(1) input")
     .fill("xotabu4@gmail.com");
   await page.locator("div.p-0 > div:nth-of-type(1) input").click();
-  await page.locator("main div:nth-of-type(2) input").fill("xotabu4@gmailz.com");
+  await page.locator("main div:nth-of-type(2) input").fill("xotassdbu4@gmailz.com");
   await page.locator("main button.custom-btn-primary").click();
   await expect(page.getByRole("heading", { name: "Login" })).not.toBeVisible();
 });
